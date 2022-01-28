@@ -39,8 +39,8 @@ export async function getFeedUrlsFromNotion() {
   }
 
   const feeds = response.results.map((item) => ({
-    title: item.properties.Name.title[0].plain_text,
-    feedUrl: item.properties.URL.url,
+    title: item.properties.Title.title[0].plain_text,
+    feedUrl: item.properties.Link.url,
   }));
 
   return feeds;
@@ -60,7 +60,7 @@ export async function addFeedItemToNotion(notionItem) {
         database_id: NOTION_READER_DATABASE_ID,
       },
       properties: {
-        Name: {
+        Title: {
           title: [
             {
               text: {
@@ -69,7 +69,7 @@ export async function addFeedItemToNotion(notionItem) {
             },
           ],
         },
-        URL: {
+        Link: {
           url: link,
         },
       },
