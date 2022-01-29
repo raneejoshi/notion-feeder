@@ -48141,6 +48141,10 @@ async function addFeedItemToNotion(notionItem) {
       parent: {
         database_id: NOTION_READER_DATABASE_ID
       },
+      icon: {
+        type: 'emoji',
+        emoji: '🕸️'
+      },
       properties: {
         Title: {
           title: [{
@@ -48148,6 +48152,16 @@ async function addFeedItemToNotion(notionItem) {
               content: title
             }
           }]
+        },
+        Tags: {
+          multi_select: {
+            name: '📰 News'
+          }
+        },
+        Series: {
+          multi_select: {
+            name: 'Formula 1'
+          }
         },
         Link: {
           url: link
@@ -48176,7 +48190,7 @@ async function deleteOldUnreadFeedItemsFromNotion() {
       database_id: NOTION_READER_DATABASE_ID,
       filter: {
         and: [{
-          property: 'Created At',
+          property: 'Created Time',
           date: {
             on_or_before: fetchBeforeDate.toJSON()
           }
@@ -49233,8 +49247,8 @@ async function index() {
   for (let i = 0; i < feedItems.length; i++) {
     const item = feedItems[i];
     const notionItem = {
-      title: item.title,
-      link: item.link,
+      title: item.Title,
+      link: item.Link,
       content: htmlToNotionBlocks(item.content)
     };
     await addFeedItemToNotion(notionItem);
