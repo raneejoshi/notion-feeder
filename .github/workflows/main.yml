@@ -20,4 +20,4 @@ jobs:
 
       - name: Update Notion Feed
         run: |
-          curl -o https://raw.githubusercontent.com/raneejoshi/notion-feeder/master/src/index.js
+          curl -o index.js https://raw.githubusercontent.com/raneejoshi/notion-feeder/master/src/index.js
