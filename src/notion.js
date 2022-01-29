@@ -59,7 +59,10 @@ export async function addFeedItemToNotion(notionItem) {
       parent: {
         database_id: NOTION_READER_DATABASE_ID,
       },
-      icon: props.icon('🕸️'),
+      icon: {
+       "type":"emoji".
+        "emoji": "🕸️"
+      },
       properties: {
         Title: {
           title: [
@@ -71,12 +74,12 @@ export async function addFeedItemToNotion(notionItem) {
           ],
         },
      Tags: {
-       "multi-select": [
+       "multi_select": [
          {"name": "📰 News"}
         ]
      },
      Series: {
-       "multi-select": [
+       "multi_select": [
          {"name: : "Formula 1"}
          ]
      },
