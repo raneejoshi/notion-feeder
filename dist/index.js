@@ -48154,14 +48154,14 @@ async function addFeedItemToNotion(notionItem) {
           }]
         },
         Tags: {
-          multi_select: {
+          multi_select: [{
             name: '📰 News'
-          }
+          }]
         },
         Series: {
-          multi_select: {
+          multi_select: [{
             name: 'Formula 1'
-          }
+          }]
         },
         Link: {
           url: link
