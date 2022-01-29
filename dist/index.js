@@ -48113,7 +48113,9 @@ async function getFeedUrlsFromNotion() {
           }
         }, {
           property: 'Source',
-          equals: 'RSS'
+          select: {
+            equals: 'RSS'
+          }
         }]
       }
     });
