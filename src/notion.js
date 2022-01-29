@@ -22,17 +22,18 @@ export async function getFeedUrlsFromNotion() {
   try {
     response = await notion.databases.query({
       database_id: NOTION_FEEDS_DATABASE_ID,
-       filter: {
+      filter: {
         and: [
           {
             property: 'Enabled',
-            checkbox: {
-              equals: true,
+            checkbox: 
+            { equals: true,
             },
           },
-           {
+          {
             property: 'Source',
-            equals: 'RSS'},
+            equals: 'RSS'
+          },
         ],
       },
     });
