@@ -60,8 +60,8 @@ export async function addFeedItemToNotion(notionItem) {
         database_id: NOTION_READER_DATABASE_ID,
       },
       icon: {
-       "type":"emoji".
-        "emoji": "🕸️"
+       type: "emoji"
+        emoji: "🕸️"
       },
       properties: {
         Title: {
@@ -73,14 +73,14 @@ export async function addFeedItemToNotion(notionItem) {
             },
           ],
         },
-     Tags: {
-       "multi_select": [
-         {"name": "📰 News"}
+     "Tags": {
+       multi_select: [
+         {name: "📰 News"}
         ]
      },
-     Series: {
-       "multi_select": [
-         {"name: : "Formula 1"}
+     "Series": {
+       multi_select: [
+         {name: : "Formula 1"}
          ]
      },
         Link: {
