@@ -30,7 +30,7 @@ export async function getFeedUrlsFromNotion() {
           },
           {
             property: 'Source',
-            select: {equals: 'RSS'},
+            select: { equals: 'RSS' },
           },
         ],
       },
