@@ -48106,11 +48106,14 @@ async function getFeedUrlsFromNotion() {
     response = await notion.databases.query({
       database_id: NOTION_FEEDS_DATABASE_ID,
       filter: {
-        or: [{
+        and: [{
           property: 'Enabled',
           checkbox: {
             equals: true
           }
+        }, {
+          property: 'Source',
+          equals: 'RSS'
         }]
       }
     });
