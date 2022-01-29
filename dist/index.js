@@ -48181,7 +48181,7 @@ async function deleteOldUnreadFeedItemsFromNotion() {
 
   const fetchBeforeDate = new Date();
   fetchBeforeDate.setDate(fetchBeforeDate.getDate() - 30); // Query the feed reader database
-  // and fetch only those items that are unread or created before last 30 days
+  // and fetch only those items that are unread or before last 30 days
 
   let response;
 
