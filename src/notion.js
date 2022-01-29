@@ -80,7 +80,7 @@ export async function addFeedItemToNotion(notionItem) {
      },
      Series: {
        multi_select: [
-         {name: : "Formula 1"}
+         {name: "Formula 1"}
          ]
      },
         Link: {
