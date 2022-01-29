@@ -32,7 +32,7 @@ export async function getFeedUrlsFromNotion() {
           },
            {
             property: 'Source',
-            checkbox: equals: 'RSS',
+            checkbox: {equals: 'RSS'},
             },
           },
         ],
