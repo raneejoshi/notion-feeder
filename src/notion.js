@@ -60,7 +60,7 @@ export async function addFeedItemToNotion(notionItem) {
         database_id: NOTION_READER_DATABASE_ID,
       },
       icon: {
-       type: "emoji"
+       type: "emoji",
         emoji: "🕸️"
       },
       properties: {
