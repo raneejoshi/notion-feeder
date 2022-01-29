@@ -48141,10 +48141,6 @@ async function addFeedItemToNotion(notionItem) {
       parent: {
         database_id: NOTION_READER_DATABASE_ID
       },
-      icon: {
-        type: 'emoji',
-        emoji: '🕸️'
-      },
       properties: {
         Title: {
           title: [{
@@ -48152,6 +48148,9 @@ async function addFeedItemToNotion(notionItem) {
               content: title
             }
           }]
+        },
+        Link: {
+          url: link
         },
         Tags: {
           multi_select: {
@@ -48162,9 +48161,6 @@ async function addFeedItemToNotion(notionItem) {
           multi_select: {
             name: 'Formula 1'
           }
-        },
-        Link: {
-          url: link
         }
       },
       children: content
