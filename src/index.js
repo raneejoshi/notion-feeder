@@ -11,8 +11,8 @@ async function index() {
   for (let i = 0; i < feedItems.length; i++) {
     const item = feedItems[i];
     const notionItem = {
-      title: item.Title,
-      link: item.Link,
+      title: item.title,
+      link: item.link,
       content: htmlToNotionBlocks(item.content),
     };
     await addFeedItemToNotion(notionItem);
