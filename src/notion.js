@@ -72,12 +72,6 @@ export async function addFeedItemToNotion(notionItem) {
         Link: {
           url: link,
         },
-        Tags: {
-          multi_select: { name: '📰 News' },
-        },
-        Series: {
-          multi_select: { name: 'Formula 1' },
-        },
       },
       children: content,
     });
