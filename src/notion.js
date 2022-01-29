@@ -73,12 +73,12 @@ export async function addFeedItemToNotion(notionItem) {
             },
           ],
         },
-     "Tags": {
+     Tags: {
        multi_select: [
          {name: "📰 News"}
         ]
      },
-     "Series": {
+     Series: {
        multi_select: [
          {name: : "Formula 1"}
          ]
