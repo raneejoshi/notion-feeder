@@ -25,8 +25,7 @@ export async function getFeedUrlsFromNotion() {
       filter: {
         and: [
           {
-            property: 'Enabled',
-            checkbox: { equals: true,
+            property: 'Enabled', checkbox: { equals: true,
             },
           },
           {
