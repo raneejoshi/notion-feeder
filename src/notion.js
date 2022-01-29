@@ -33,8 +33,6 @@ export async function getFeedUrlsFromNotion() {
            {
             property: 'Source',
             equals: 'RSS'},
-            },
-          },
         ],
       },
     });
