@@ -72,7 +72,6 @@ export async function addFeedItemToNotion(notionItem) {
         Link: {
           url: link,
         },
-        
         Tags: {
           multi_select: { name: '📰 News' },
         },
