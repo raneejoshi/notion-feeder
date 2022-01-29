@@ -74,10 +74,10 @@ export async function addFeedItemToNotion(notionItem) {
           ],
         },
         Tags: {
-          multi_select: { name: '📰 News' },
+          multi_select: [{ name: '📰 News' }]
         },
         Series: {
-          multi_select: { name: 'Formula 1' },
+          multi_select: [{ name: 'Formula 1' }]
         },
         Link: {
           url: link,
