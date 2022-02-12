@@ -48172,7 +48172,12 @@ async function addFeedItemToNotion(notionItem) {
           url: link
         }
       },
-      children: content
+      children: [{
+        content,
+        embed: {
+          url: link
+        }
+      }]
     });
   } catch (err) {
     console.error(err);
