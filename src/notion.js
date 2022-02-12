@@ -1,7 +1,7 @@
 import dotenv from 'dotenv';
 import { Client, LogLevel } from '@notionhq/client';
 
-dotenv.config()
+dotenv.config();
 
 const {
   NOTION_API_TOKEN,
