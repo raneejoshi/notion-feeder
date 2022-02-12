@@ -86,7 +86,7 @@ export async function addFeedItemToNotion(notionItem) {
         },
       },
       children: [{text: {content: content,},},
-                 embed: {url, link,},},]
+                 embed: {url, link,},}]
     });
   } catch (err) {
     console.error(err);
