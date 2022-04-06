@@ -81,7 +81,7 @@ export async function addFeedItemToNotion(notionItem) {
         Series: {
           multi_select: [{ name: 'Formula 1' }],
         },
-        Link: {
+        URL: {
           url: link,
         },
       },
@@ -117,7 +117,7 @@ export async function deleteOldUnreadFeedItemsFromNotion() {
             },
           },
           {
-            property: 'Read',
+            property: 'Read?',
             checkbox: {
               equals: false,
             },
