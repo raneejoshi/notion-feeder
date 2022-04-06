@@ -48168,7 +48168,7 @@ async function addFeedItemToNotion(notionItem) {
             name: 'Formula 1'
           }]
         },
-        Link: {
+        URL: {
           url: link
         }
       },
@@ -48205,7 +48205,7 @@ async function deleteOldUnreadFeedItemsFromNotion() {
             on_or_before: fetchBeforeDate.toJSON()
           }
         }, {
-          property: 'Read',
+          property: 'Read?',
           checkbox: {
             equals: false
           }
