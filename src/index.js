@@ -18,7 +18,7 @@ async function index() {
     await addFeedItemToNotion(notionItem);
   }
 
-  await deleteOldUnreadFeedItemsFromNotion();
+  /await deleteOldUnreadFeedItemsFromNotion();
 }
 
 index();
