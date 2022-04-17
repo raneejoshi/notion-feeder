@@ -42,7 +42,7 @@ export async function getFeedUrlsFromNotion() {
 
   const feeds = response.results.map((item) => ({
     title: item.properties.Title.title[0].plain_text,
-    feedUrl: item.properties.Link.url,
+    feedUrl: item.properties.URL.url,
   }));
 
   return feeds;
